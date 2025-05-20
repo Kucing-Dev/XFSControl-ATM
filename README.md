@@ -43,6 +43,11 @@ Makanya:
 > Logging itu kayak buku harian si ATM, biar semua kejadian dicatet.
 > Contoh: "User tarik Rp100.000, berhasil." atau "Cash Dispenser error E302."
 
+Di kode lo, ini dilakukan pake:
+```
+ std::ofstream logFile("atm_log.txt", std::ios_base::app);
+logFile << "Isi log-nya" << std::endl; 
+```
 
 ### *Penjelasan Kode:*
 
